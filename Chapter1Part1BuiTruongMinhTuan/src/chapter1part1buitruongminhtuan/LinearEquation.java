@@ -7,7 +7,8 @@ package chapter1part1buitruongminhtuan;
 
 /**
  *
- * @author long
+ * @author BTMT
+ * @Date 18/08/2016
  */
 public class LinearEquation {
 
@@ -35,7 +36,7 @@ public class LinearEquation {
         this.aFactor = aFactor;
         this.bFactor = bFactor;
     }
-
+    //find the root of linear equation
     public String findRoot() {
         if (aFactor == 0 && bFactor == 0) {
             xRoot = "Equations infinitely many solutions";

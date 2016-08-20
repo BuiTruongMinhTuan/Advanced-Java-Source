@@ -41,9 +41,9 @@ public class TestLinearEquation {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    LinearEquation LE = new LinearEquation(0, 0);
+    LinearEquation LE = new LinearEquation(0, 0);//object initialization
 
-    @Test
+    @Test//test for Linear Equation
     public void Test1() {
         LE.setaFactor(3);
         LE.setbFactor(3);
