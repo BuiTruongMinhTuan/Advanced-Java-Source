@@ -73,14 +73,50 @@ public class StaffSalary {
     public void inputInformationStaff() throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Input Information Staff:");
-        System.out.println("Staff name:");
-        staffName = input.readLine();
-        System.out.println("Coefficients Salary:");
-        coefficientsSalary = Float.parseFloat(input.readLine());
-        System.out.println("Amount of People Reduce:");
-        amountOfPeopleReduce = Integer.parseInt(input.readLine());
-        System.out.println("Allowance:");
-        allowance = Integer.parseInt(input.readLine());
+        boolean check = true;
+        while (check) {
+            try {
+                System.out.println("Staff name:");
+                staffName = input.readLine();
+            } catch (NumberFormatException | NullPointerException ex) {
+                System.out.println(ex.toString());
+                continue;
+            }
+            check = false;
+        }
+        check = true;
+        while (check) {
+            try {
+                System.out.println("Coefficients Salary:");
+                coefficientsSalary = Float.parseFloat(input.readLine());
+            } catch (NumberFormatException | NullPointerException ex) {
+                System.out.println(ex.toString());
+                continue;
+            }
+            check = false;
+        }
+        check = true;
+        while (check) {
+            try {
+                System.out.println("Amount of People Reduce:");
+                amountOfPeopleReduce = Integer.parseInt(input.readLine());
+            } catch (NumberFormatException | NullPointerException ex) {
+                System.out.println(ex.toString());
+                continue;
+            }
+            check = false;
+        }
+        check = true;
+        while (check) {
+            try {
+                System.out.println("Allowance:");
+                allowance = Integer.parseInt(input.readLine());
+            } catch (NumberFormatException | NullPointerException ex) {
+                System.out.println(ex.toString());
+                continue;
+            }
+            check = false;
+        }
 
     }
 
@@ -101,6 +137,9 @@ public class StaffSalary {
     public float computeSalary() {
         income = coefficientsSalary * basicSalary + allowance;
         incomeTax = income - basicTax - amountOfPeopleReduce * basicReduce;
+        if (incomeTax < 0) {
+            incomeTax = 0;
+        }
         computePersonalIncomeTax(incomeTax);
         realSalary = income - personalIncomeTax;
         return realSalary;
