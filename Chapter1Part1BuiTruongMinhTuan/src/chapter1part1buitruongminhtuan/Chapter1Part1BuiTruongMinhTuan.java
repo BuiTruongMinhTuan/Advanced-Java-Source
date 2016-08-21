@@ -24,7 +24,8 @@ public class Chapter1Part1BuiTruongMinhTuan {
         //part1_3();
         //part1_4();
         //part1_5();
-        part1_6();
+        //part1_6();
+        part1_7();
 
     }
 
@@ -93,6 +94,16 @@ public class Chapter1Part1BuiTruongMinhTuan {
             SS.inputInformationStaff();
             SS.computeSalary();
             SS.outputInformationStaff();
+        } catch (NullPointerException e) {
+            System.out.println(e.toString());
+        }
+    }
+    
+    static void part1_7() throws IOException {
+        try {
+            ManagerCD MC = new ManagerCD();
+            MC.inputCD();
+            MC.computePriceOfAllCDs();
         } catch (NullPointerException e) {
             System.out.println(e.toString());
         }
