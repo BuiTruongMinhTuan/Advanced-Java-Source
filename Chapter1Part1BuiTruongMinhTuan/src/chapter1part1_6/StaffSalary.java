@@ -58,21 +58,24 @@ enum LeverSalary {
 
 public class StaffSalary {
 
-    String staffName;
-    float coefficientsSalary;
-    int amountOfPeopleReduce;
-    int allowance;
-    float income;
-    float incomeTax;
-    float personalIncomeTax;
-    float realSalary;
+    protected String staffName;
+    protected float coefficientsSalary;
+    protected int amountOfPeopleReduce;
+    protected int allowance;
+    protected float income;
+    protected float incomeTax;
+    protected float personalIncomeTax;
+    protected float realSalary;
+
+    protected BufferedReader input;
 
     public StaffSalary() {
+        input = new BufferedReader(new InputStreamReader(System.in));
     }
 
     //input infomation of staff
     public void inputInformationStaff() throws IOException {
-        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+
         System.out.println("Input Information Staff:");
         boolean check = true;
         while (check) {
@@ -131,9 +134,9 @@ public class StaffSalary {
         System.out.println("real Salary :" + income + " - " + personalIncomeTax + " = " + realSalary);
 
     }
-    int basicSalary = 1260000;
-    int basicTax = 9000000;
-    int basicReduce = 3600000;
+    protected int basicSalary = 1260000;
+    protected int basicTax = 9000000;
+    protected int basicReduce = 3600000;
 
     public float computeSalary() {
         income = coefficientsSalary * basicSalary + allowance;
@@ -146,7 +149,7 @@ public class StaffSalary {
         return realSalary;
     }
 
-    float computePersonalIncomeTax(float incomeTax) {
+    public float computePersonalIncomeTax(float incomeTax) {
         if (incomeTax < LeverSalary.lever1.getIncomeTax()) {
 
             personalIncomeTax = incomeTax * LeverSalary.lever1.getTax();
