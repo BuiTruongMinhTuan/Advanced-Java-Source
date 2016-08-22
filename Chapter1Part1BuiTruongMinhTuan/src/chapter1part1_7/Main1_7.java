@@ -7,7 +7,9 @@ package chapter1part1_7;
 
 /**
  *
- * @author long
+ * @author BTMT
+ * @Date 19/08/2016
+ * @version 1.0
  */
 public class Main1_7 {
     public static void main(String[] args) {

@@ -3,22 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package chapter1part1_2;
+package chapter1part1_12;
 
-
+import java.io.IOException;
 
 /**
  *
  * @author BTMT
- * @Date 18/08/2016
+ * @Date 20/08/2016
  * @version 1.0
  */
-public class Main1_2 {
-    public static void main(String[] args) {
+public class Main11_12 {
+
+    public static void main(String[] args) throws IOException {
         try {
-            CalculateTwoNumbers cTN = new CalculateTwoNumbers(1, 2);
-            double resutl = cTN.calculater(4);
-            System.out.println("Result of superlative equation: " + resutl);
+            ManagerBook MB = new ManagerBook();
+            MB.manager();
+
         } catch (NullPointerException e) {
             System.out.println(e.toString());
         }

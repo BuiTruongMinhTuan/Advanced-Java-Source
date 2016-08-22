@@ -7,7 +7,9 @@ package chapter1part1_1;
 
 /**
  *
- * @author long
+ * @author BTMT
+ * @Date 18/08/2016
+ * @version 1.0
  */
 public class Main1_1 {
 

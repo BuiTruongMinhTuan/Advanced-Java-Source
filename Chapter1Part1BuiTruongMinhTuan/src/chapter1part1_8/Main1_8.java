@@ -9,7 +9,9 @@ import java.io.IOException;
 
 /**
  *
- * @author long
+ * @author BTMT
+ * @Date 22/08/2016
+ * @version 1.0
  */
 public class Main1_8 {
     public static void main(String[] args) throws IOException {
