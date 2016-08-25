@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chapter1part1_5;
 
 
@@ -20,6 +16,10 @@ public class CircuitAreaRectangle {
     double circuit;
     double area;
 
+    public CircuitAreaRectangle() {
+    }
+    
+   
     public CircuitAreaRectangle(int pointAx, int pointAy, int pointBx, int pointBy) {
         pointerA = new Pointer(pointAx, pointAy);
         pointerB = new Pointer(pointBx, pointBy);
@@ -45,4 +45,21 @@ public class CircuitAreaRectangle {
         }
         return area;
     }
+
+    public Pointer getPointerA() {
+        return pointerA;
+    }
+
+    public void setPointerA(Pointer pointerA) {
+        this.pointerA = pointerA;
+    }
+
+    public Pointer getPointerB() {
+        return pointerB;
+    }
+
+    public void setPointerB(Pointer pointerB) {
+        this.pointerB = pointerB;
+    }
+    
 }

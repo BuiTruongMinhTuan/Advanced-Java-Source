@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chapter1part1_10;
 
 import java.io.BufferedReader;
@@ -33,7 +29,7 @@ public class Hunman {
         this.address = address;
         this.phone = phone;
     }
-
+    // input Information
     public void inputInfo() throws IOException {
 
         System.out.println("full Name:");
@@ -45,7 +41,7 @@ public class Hunman {
         System.out.println("phone:");
         phone = input.readLine();
     }
-
+    //output Information
     public void outputInfo() {
         System.out.println("full Name: " + fullName);
         System.out.println("birth Day: " + birthDay);

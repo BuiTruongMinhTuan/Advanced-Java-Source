@@ -32,7 +32,7 @@ public class ReferenceBook extends Book {
     public double calculateMoney() {
         return super.calculateMoney() + super.calculateMoney() * (tax / 100);
     }
-
+    //
     @Override
     public void inputInfo() throws IOException {
         super.inputInfo(); //To change body of generated methods, choose Tools | Templates.

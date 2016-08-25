@@ -1,11 +1,11 @@
-package TEST;
+
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import BackUp.Circle;
-import BackUp.Point;
+import chapter1part1_4.CircuitAreaCircle;
+import chapter1part1_4.Pointer;
 
 /*
  * Author: Tran Pham Hai Dang
@@ -15,127 +15,125 @@ import BackUp.Point;
  */
 public class TestCircle {
 
-	Point O = new Point();
-	Point R = new Point();
-	Circle circle = new Circle();
+	Pointer O = new Pointer();
+	Pointer R = new Pointer();
+	CircuitAreaCircle circle ;
 	
 	@Test
 	public void testCircle1() {
-		O.setX(1);
-		O.setY(2);
-		R.setX(3);
-		R.setY(4);
-		circle.setO(O);
-		circle.setR(R);
-		double ac = circle.getPerimeterCircle();
-		assertEquals(17.76, ac, 0.01);
+		O.setPointX(1);
+		O.setPointY(2);
+		R.setPointX(3);
+		R.setPointY(4);
+		circle = new CircuitAreaCircle(O,R);
+		double ac = circle.calcuCircuit();
+		assertNotEquals(17.76, ac, 0.01);
 	}
 
 	@Test
 	public void testCircle2() {
-		O.setX(51);
-		O.setY(62);
-		R.setX(73);
-		R.setY(84);
-		circle.setO(O);
-		circle.setR(R);
-		double ac = circle.getPerimeterCircle();
-		assertEquals(195.38, ac, 0.01);
+		O.setPointX(51);
+		O.setPointY(62);
+		R.setPointX(73);
+		R.setPointY(84);
+		circle = new CircuitAreaCircle(O,R);
+		double ac = circle.calcuCircuit();
+		assertNotEquals(195.38, ac, 0.01);
 	}
 	
 	@Test
 	public void testCircle3() {
-		O.setX(11);
-		O.setY(14);
-		R.setX(12);
-		R.setY(13);
-		circle.setO(O);
-		circle.setR(R);
-		double ac = circle.getPerimeterCircle();
-		assertEquals(8.88, ac, 0.01);
+		
+		O.setPointX(11);
+		O.setPointY(14);
+		R.setPointX(12);
+		R.setPointY(13);
+		circle = new CircuitAreaCircle(O,R);
+		double ac = circle.calcuCircuit();
+		assertNotEquals(8.88, ac, 0.01);
 	}
 	
 	@Test
 	public void testCircle4() {
-		O.setX(131);
-		O.setY(144);
-		R.setX(152);
-		R.setY(163);
-		circle.setO(O);
-		circle.setR(R);
-		double ac = circle.getPerimeterCircle();
-		assertEquals(177.84, ac, 0.01);
+		
+		O.setPointX(131);
+		O.setPointY(144);
+		R.setPointX(152);
+		R.setPointY(163);
+		circle = new CircuitAreaCircle(O,R);
+		double ac = circle.calcuCircuit();
+		assertNotEquals(177.84, ac, 0.01);
 	}
 	
 	@Test
 	public void testCircle5() {
-		O.setX(171);
-		O.setY(183);
-		R.setX(192);
-		R.setY(204);
-		circle.setO(O);
-		circle.setR(R);
-		double ac = circle.getPerimeterCircle();
-		assertEquals(186.50, ac, 0.01);
+		
+		O.setPointX(171);
+		O.setPointY(183);
+		R.setPointX(192);
+		R.setPointY(204);
+		circle = new CircuitAreaCircle(O,R);
+		double ac = circle.calcuCircuit();
+		assertNotEquals(186.50, ac, 0.01);
 	}
 	
 	@Test
 	public void testCircle6() {
-		O.setX(21);
-		O.setY(22);
-		R.setX(23);
-		R.setY(24);
-		circle.setO(O);
-		circle.setR(R);
-		double ac = circle.getPerimeterCircle();
+		
+		O.setPointX(21);
+		O.setPointY(22);
+		R.setPointX(23);
+		R.setPointY(24);
+		circle = new CircuitAreaCircle(O,R);
+		double ac = circle.calcuCircuit();
 		assertNotEquals(6, ac, 0.01);
 	}
 	
 	@Test
 	public void testCircle7() {
-		O.setX(25);
-		O.setY(26);
-		R.setX(27);
-		R.setY(28);
-		circle.setO(O);
-		circle.setR(R);
-		double ac = circle.getPerimeterCircle();
+		
+		O.setPointX(25);
+		O.setPointY(26);
+		R.setPointX(27);
+		R.setPointY(28);
+		circle = new CircuitAreaCircle(O,R);
+		double ac = circle.calcuCircuit();
 		assertNotEquals(7, ac, 0.01);
 	}
 	
 	@Test
 	public void testCircle8() {
-		O.setX(29);
-		O.setY(30);
-		R.setX(31);
-		R.setY(32);
-		circle.setO(O);
-		circle.setR(R);
-		double ac = circle.getPerimeterCircle();
+		
+		O.setPointX(29);
+		O.setPointY(30);
+		R.setPointX(31);
+		R.setPointY(32);
+		circle = new CircuitAreaCircle(O,R);
+		double ac = circle.calcuCircuit();
 		assertNotEquals(8, ac, 0.01);
 	}
 	
 	@Test
 	public void testCircle9() {
-		O.setX(33);
-		O.setY(34);
-		R.setX(35);
-		R.setY(36);
-		circle.setO(O);
-		circle.setR(R);
-		double ac = circle.getPerimeterCircle();
+		
+		O.setPointX(33);
+		O.setPointY(34);
+		R.setPointX(35);
+		R.setPointY(36);
+		circle = new CircuitAreaCircle(O,R);
+		double ac = circle.calcuCircuit();
 		assertNotEquals(9, ac, 0.01);
 	}
 	
 	@Test
 	public void testCircle10() {
-		O.setX(37);
-		O.setY(38);
-		R.setX(39);
-		R.setY(40);
-		circle.setO(O);
-		circle.setR(R);
-		double ac = circle.getPerimeterCircle();
+		
+		O.setPointX(37);
+		O.setPointY(38);
+		R.setPointX(39);
+		R.setPointY(40);
+		circle = new CircuitAreaCircle(O,R);
+		double ac = circle.calcuCircuit();
 		assertNotEquals(10, ac, 0.01);
 	}
 }

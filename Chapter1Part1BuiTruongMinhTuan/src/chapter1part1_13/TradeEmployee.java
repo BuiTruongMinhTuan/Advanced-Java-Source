@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chapter1part1_13;
 
 import chapter1part1_6.StaffSalary;
@@ -69,6 +65,22 @@ public class TradeEmployee extends StaffSalary {
         System.out.println("income Tax :" + income + " - " + basicTax + " - " + amountOfPeopleReduce + " * " + basicReduce + " = " + incomeTax);
         System.out.println("personal Income Tax :" + personalIncomeTax);
         System.out.println("real Salary :" + income + " - " + personalIncomeTax + " = " + realSalary);
+    }
+
+    public float getSalaryTrade() {
+        return salaryTrade;
+    }
+
+    public void setSalaryTrade(float salaryTrade) {
+        this.salaryTrade = salaryTrade;
+    }
+
+    public float getRateSalaryTrade() {
+        return rateSalaryTrade;
+    }
+
+    public void setRateSalaryTrade(float rateSalaryTrade) {
+        this.rateSalaryTrade = rateSalaryTrade;
     }
     
 }

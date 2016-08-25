@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chapter1part1_13;
 
 import chapter1part1_6.StaffSalary;
@@ -60,4 +56,12 @@ public class ProductionEmployee extends StaffSalary {
         System.out.println("real Salary :" + income + " - " + personalIncomeTax + " = " + realSalary);
     }
 
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+    
 }

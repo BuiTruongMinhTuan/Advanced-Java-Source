@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chapter1part1_4;
 
 import chapter1part1_3.*;
@@ -17,8 +13,27 @@ public class Pointer {
 
     int pointX;
     int pointY;
-   
 
+    public Pointer() {
+    }
+
+    public int getPointX() {
+        return pointX;
+    }
+
+    public void setPointX(int pointX) {
+        this.pointX = pointX;
+    }
+
+    public int getPointY() {
+        return pointY;
+    }
+
+    public void setPointY(int pointY) {
+        this.pointY = pointY;
+    }
+   
+    
     public Pointer(int pointX, int pointY) {
         this.pointX = pointX;
         this.pointY = pointY;

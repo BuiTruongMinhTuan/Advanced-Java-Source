@@ -1,11 +1,11 @@
-package TEST;
+
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Soldier.Infantryman;
-import Soldier.Trooper;
+import chapter1part1_8.Infantryman;
+import chapter1part1_8.Trooper;
 
 /*
  * Author: Tran Pham Hai Dang

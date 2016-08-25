@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chapter1part1_4;
 
 import chapter1part1_3.DistanceOfTwoPoints;
@@ -17,6 +13,12 @@ public class CircuitAreaCircle {
     DistanceOfTwoPoints DoT;
     double circuit;
     double area;
+
+    public CircuitAreaCircle() {
+    }
+    public CircuitAreaCircle(Pointer pointer1, Pointer pointer2) {
+        DoT=new DistanceOfTwoPoints(pointer1.pointX, pointer1.pointY, pointer2.pointX, pointer2.pointY);
+    }
     
     public CircuitAreaCircle(int aX,int aY,int bX, int bY) {
         DoT=new DistanceOfTwoPoints(aX, aY, bX, bY);
@@ -38,6 +40,14 @@ public class CircuitAreaCircle {
         
         area=radius*radius*pi;
         return area;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
     
 }
