@@ -11,6 +11,7 @@ import java.util.Scanner;
  * Version : 1.0
  * 
  */
+//to run program
 public class MaxOfArrayThread {
     public static void main(String[] args) throws InterruptedException{
         
