@@ -19,15 +19,15 @@ public class StreamOject {
         try {
             Random random = new Random();
             List<Student> listStudent = Arrays.asList(
-                    new Student("Student1", random.nextInt(25)+3, random.nextInt(10)+2, random.nextInt(10)+2),
-                    new Student("Student2", random.nextInt(25)+3, random.nextInt(10)+2, random.nextInt(10)+2),
-                    new Student("Student3", random.nextInt(25)+3, random.nextInt(10)+2, random.nextInt(10)+2),
-                    new Student("Student4", random.nextInt(25)+3, random.nextInt(10)+2, random.nextInt(10)+2),
-                    new Student("Student5", random.nextInt(25)+3, random.nextInt(10)+2, random.nextInt(10)+2),
-                    new Student("Student6", random.nextInt(25)+3, random.nextInt(10)+2, random.nextInt(10)+2),
-                    new Student("Student7", random.nextInt(25)+3, random.nextInt(10)+2, random.nextInt(10)+2),
-                    new Student("Student9", random.nextInt(25)+3, random.nextInt(10)+2, random.nextInt(10)+2),
-                    new Student("Student10", random.nextInt(25)+3, random.nextInt(10)+2, random.nextInt(10)+2)
+                    new Student("Student1", random.nextInt(25)+3, random.nextInt(10)+1, random.nextInt(10)+1),
+                    new Student("Student2", random.nextInt(25)+3, random.nextInt(10)+1, random.nextInt(10)+1),
+                    new Student("Student3", random.nextInt(25)+3, random.nextInt(10)+1, random.nextInt(10)+1),
+                    new Student("Student4", random.nextInt(25)+3, random.nextInt(10)+1, random.nextInt(10)+1),
+                    new Student("HStudent5", random.nextInt(25)+3, random.nextInt(10)+1, random.nextInt(10)+1),
+                    new Student("Student6", random.nextInt(25)+3, random.nextInt(10)+1, random.nextInt(10)+1),
+                    new Student("HStudent7", random.nextInt(25)+3, random.nextInt(10)+1, random.nextInt(10)+1),
+                    new Student("Student9", random.nextInt(25)+3, random.nextInt(10)+1, random.nextInt(10)+1),
+                    new Student("Student10", random.nextInt(25)+3, random.nextInt(10)+1, random.nextInt(10)+1)
             );
 
             Stream<Student> stream = listStudent.stream();
