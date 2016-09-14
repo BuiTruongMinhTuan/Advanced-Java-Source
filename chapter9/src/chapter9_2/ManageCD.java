@@ -16,6 +16,8 @@ import java.util.ResourceBundle;
  * 
  */
 //manage CD by list
+
+
 public class ManageCD {
 
     ArrayList<CD> listCD = new ArrayList<>();
