@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<don_vi>
+  <nhan_vien>
+    <id>1</id>
+    <ho_ten>Trần Độc Nhất</ho_ten>
+    <gioi_tinh>1</gioi_tinh>
+    <ngay_sinh>1993-03-11</ngay_sinh>
+    <muc_luong>4400000.0</muc_luong>
+    <dia_chi>Độc Lập</dia_chi>
+    <id_don_vi>1</id_don_vi>
+  </nhan_vien>
+  <nhan_vien>
+    <id>2</id>
+    <ho_ten>Nguyễn Văn Nhị</ho_ten>
+    <gioi_tinh>1</gioi_tinh>
+    <ngay_sinh>1991-01-19</ngay_sinh>
+    <muc_luong>3200000.0</muc_luong>
+    <dia_chi>Q2</dia_chi>
+    <id_don_vi>2</id_don_vi>
+  </nhan_vien>
+  <nhan_vien>
+    <id>3</id>
+    <ho_ten>Lê Viễn Tam</ho_ten>
+    <gioi_tinh>0</gioi_tinh>
+    <ngay_sinh>1993-09-12</ngay_sinh>
+    <muc_luong>4200000.0</muc_luong>
+    <dia_chi>Q3</dia_chi>
+    <id_don_vi>2</id_don_vi>
+  </nhan_vien>
+  <nhan_vien>
+    <id>4</id>
+    <ho_ten>Nguyễn Thi Tứ</ho_ten>
+    <gioi_tinh>0</gioi_tinh>
+    <ngay_sinh>1994-12-31</ngay_sinh>
+    <muc_luong>3100000.0</muc_luong>
+    <dia_chi>Q4</dia_chi>
+    <id_don_vi>1</id_don_vi>
+  </nhan_vien>
+  <nhan_vien>
+    <id>5</id>
+    <ho_ten>Huỳnh Văn Ngũ</ho_ten>
+    <gioi_tinh>1</gioi_tinh>
+    <ngay_sinh>1990-12-03</ngay_sinh>
+    <muc_luong>4300000.0</muc_luong>
+    <dia_chi>Q5</dia_chi>
+    <id_don_vi>1</id_don_vi>
+  </nhan_vien>
+  <nhan_vien>
+    <id>6</id>
+    <ho_ten>Hà Tiểu Lục</ho_ten>
+    <gioi_tinh>1</gioi_tinh>
+    <ngay_sinh>1995-02-03</ngay_sinh>
+    <muc_luong>3300000.0</muc_luong>
+    <dia_chi>Q6</dia_chi>
+    <id_don_vi>2</id_don_vi>
+  </nhan_vien>
+</don_vi>
