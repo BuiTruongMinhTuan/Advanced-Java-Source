@@ -54,4 +54,13 @@
     <dia_chi>Q6</dia_chi>
     <id_don_vi>2</id_don_vi>
   </nhan_vien>
+  <nhan_vien>
+    <id>1</id>
+    <ho_ten>1</ho_ten>
+    <gioi_tinh>1</gioi_tinh>
+    <ngay_sinh>1993-01-11</ngay_sinh>
+    <muc_luong>3400000.0</muc_luong>
+    <dia_chi>Q1</dia_chi>
+    <id_don_vi>1</id_don_vi>
+  </nhan_vien>
 </don_vi>
